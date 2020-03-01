@@ -1,11 +1,10 @@
 import { EventEmitter } from '@angular/core';
 
 import { Ingredient } from '../shared/ingredient.model';
-import { $ } from 'protractor';
 
 export class ShoppingListService {
   ingredientsChanged = new EventEmitter<Ingredient[]>();
-  private ingredients: Ingredient [] = [
+  private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
     new Ingredient('Tomatos', 10),
   ];
