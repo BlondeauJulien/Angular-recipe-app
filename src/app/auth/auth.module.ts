@@ -12,7 +12,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     //CommonModule, // now imported via the sharedModule import
     FormsModule, 
-    RouterModule.forChild([{ path: "auth", component: AuthComponent}]),
+    RouterModule.forChild([{ path: '', component: AuthComponent}]),
     SharedModule // to get our loading spinner
   ]
 })
