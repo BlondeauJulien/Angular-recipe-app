@@ -13,7 +13,7 @@ export class DataStorageService {
   storeRecipes() {
     const recipes = this.recipeService.getRecipes();
     this.http.put(
-      'https://academind-course-recipeapp.firebaseio.com/recipes.json',
+      'https://academind-course-angular.firebaseio.com/recipes.json',
       recipes
     ).subscribe(response => {
       console.log(response)
@@ -24,7 +24,7 @@ export class DataStorageService {
 
     return this.http
       .get<Recipe[]>(
-      'https://academind-course-recipeapp.firebaseio.com/recipes.json'
+      'https://academind-course-angular.firebaseio.com/recipes.json'
     )
     .pipe(
       map(recipes => {
